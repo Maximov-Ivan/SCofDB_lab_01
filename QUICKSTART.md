@@ -24,7 +24,7 @@ docker-compose up -d --build
 curl http://localhost:8080/health
 
 # Остановить контейнеры
-docker-compose down
+docker-compose down -v
 ```
 
 ## Что работает из коробки

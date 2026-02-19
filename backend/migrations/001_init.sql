@@ -36,7 +36,7 @@ CREATE TABLE users (
     
     CONSTRAINT users_email_not_empty CHECK (email <> ''),
     CONSTRAINT users_email_format CHECK (
-        email ~ '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+        email ~ '^[a-zA-Z0-9][a-zA-Z0-9._%-]*@[a-zA-Z0-9][a-zA-Z0-9.-]*\.[a-zA-Z]{2,}$'
     )
 );
 
