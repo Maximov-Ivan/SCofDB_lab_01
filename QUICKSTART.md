@@ -47,6 +47,7 @@ docker-compose down
 ```bash
 cd backend
 export PYTHONPATH=$(pwd)
+# set PYTHONPATH=%cd%
 
 # Запустить доменные тесты
 pytest app/tests/test_domain.py -v
